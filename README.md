@@ -10,8 +10,8 @@ This project uses EfficientNet-based deep learning to classify food images as fr
 
 ## How to Run
 
-pip install -r requirements.txt
-streamlit run app.py
+- pip install -r requirements.txt
+- streamlit run app.py
 
 ## If model does not exist
 
