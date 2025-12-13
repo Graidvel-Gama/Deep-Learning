@@ -1,0 +1,1 @@
+Before running app.py, make sure "best_model.h5" exists. If the model does not exist, open "Model.ipynb" and "run all" to train it. Aside from training, "Model.ipynb" will also give immediate results on testing and its scores.
