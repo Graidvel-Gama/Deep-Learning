@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 def load_model():
     try:
-        model = tf.keras.models.load_model("best_model.h5")
+        model = tf.keras.models.load_model("model/best_model.h5")
         return model
     except:
         return FileNotFoundError("Model could not be found.")
