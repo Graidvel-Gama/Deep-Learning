@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 
-with open('history.pkl', 'rb') as file:
+with open('model/history.pkl', 'rb') as file:
     history = pickle.load(file)
 
 model = tf.keras.models.load_model("model/best_model.h5")
