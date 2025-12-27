@@ -74,7 +74,7 @@ Model = models.Sequential([
 ])
 
 early_stop = EarlyStopping(monitor = 'val_loss', patience = 5, restore_best_weights = True)
-checkpoint = ModelCheckpoint("best_model.h5", monitor='val_loss', save_best_only = True)
+checkpoint = ModelCheckpoint("model/best_model.h5", monitor='val_loss', save_best_only = True)
 Model.compile(optimizer = tf.keras.optimizers.Adam(learning_rate = 0.0001), loss = 'binary_crossentropy', metrics = ['accuracy'])
 history = Model.fit(x_train, y_train, validation_data = (x_val, y_val), epochs = 20, batch_size = BATCH_SIZE, callbacks = [early_stop, checkpoint])
 
